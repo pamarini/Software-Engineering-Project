@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lakehead University - Conference Services</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!--header starts-->
+<div class="header">
+	 <div class="top-header">
+		 <div class="container">
+			 <div class="logo">
+				 	<a href="index.html"><img src="images/logo.png"/></a>
+			 </div>
+			 <span class="menu"> </span>
+			 <div class="m-clear"></div>
+			 <div class="top-menu">
+				<ul>
+					 <li class="active"><a href="index.html">HOME</a></li>
+					 <li><a class="scroll" href="facilities.html">FACILITIES</a></li>
+					 <li><a class="scroll" href="conference.html">CONFERENCE</a></li>
+					 <li><a class="scroll" href="booking.html">BOOKING</a></li>
+					 <li><a class="scroll" href="contact.html">CONTACT</a></li>
+				</ul>
+				<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle(200);
+					});
+				</script>
+			 </div>
+			 <div class="clearfix"></div>
+		  </div>
+	  </div>
+	  <div class="banner">
+			<div class="banner-info text-center">
+			<h3>STAY <label>WITH US.</label></h3>
+			<h1>CONFERENCE SERVICES</h1>
+			<span></span>
+			<ul>
+			 <li><a class="scroll" href="#">ACCOMODATIONS</a><i class="line"></i></li>
+			 <li><a class="scroll" href="#">MEETING FACILITIES</a></li>
+			</ul>
+			</div>
+	  </div>
+</div>
+<!---strat-date-piker---->
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<script src="js/jquery-ui.js"></script>
+		  <script>
+				  $(function() {
+				    $( "#datepicker,#datepicker1" ).datepicker();
+				  });
+		  </script>
+<!---/End-date-piker---->
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+<script type="text/javascript" src="js/JFCore.js"></script>
+<script type="text/javascript" src="js/JFForms.js"></script>
+<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+<script type="text/javascript">
+	(function() {
+		JC.init({
+			domainKey: ''
+		});
+	})();
+</script>
+<div class="online_reservation">
+		   <div class="b_room">
+			  <div class="booking_room">
+				  <div class="reservation">
+					  <ul>				
+						 <li  class="span1_of_1 left">
+							 <h5>Arrival</h5>
+							 <div class="book_date">
+								 <form>
+								 <input class="date" id="datepicker" type="text" value="1/11/2017" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '1/11/2017';}">
+								 </form>
+							 </div>					
+						 </li>
+						 <li  class="span1_of_1 left">
+							 <h5>Depature</h5>
+							 <div class="book_date">
+							 <form>
+								<input class="date" id="datepicker1" type="text" value="2/11/2017" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2/11/2017';}">
+							 </form>
+						     </div>		
+						 </li>
+						 <li class="span1_of_1">
+							 <h5>Acoomodation type</h5>
+							 <!----------start section_room----------->
+							 <div class="section_room">
+							      <select id="country" onchange="change_country(this.value)" class="frm-field required">
+										<option value="A">Apartment</option>
+										<option value="D">Dormatory</option>         
+										<option value="T">Townhouse</option>
+										<option value="S">Suites</option>
+							      </select>
+							 </div>	
+						 </li>
+						 <li class="span1_of_3">
+								<div class="date_btn">
+									<form>
+										<input type="submit" value="View Availability" />
+									</form>
+								</div>
+						 </li>
+						 <div class="clearfix"></div>
+					 </ul>
+				 </div>
+			  </div>
+				<div class="clearfix"></div>
+		  </div>
+	  </div>
+</div>
+<!---->
+<div class="package text-center">
+	 <div class="container">
+		 <h3>EXCEPTIONAL. <label>UNCONVENTIONAL.</label></h3>
+		 <p>Planning an event or a conference can be an overwhelming task, and Lakehead University's Conference Services Department recognizes your need to look at the bigger picture. Let us handle the details so you can give your delegates the attention they deserve.</p>
+		<!-- requried-jsfiles-for owl -->
+				<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+			<!-- //requried-jsfiles-for owl -->
+		  <div id="owl-demo" class="owl-carousel">
+			  <div class="item text-center image-grid">	
+					<ul>
+					 <li><img src="images/1.jpg" alt=""></li>			    
+					 <li><img src="images/2.jpg" alt=""></li>				 
+					 <li><img src="images/3.jpg" alt=""></li>
+					 </ul>
+			  </div>
+			  <div class="item text-center image-grid">	
+					<ul>
+					<li> <img src="images/3.jpg" alt=""></li>			    
+					 <li><img src="images/4.jpg" alt=""></li>				 
+					 <li><img src="images/5.jpg" alt=""></li>
+					 </ul>
+			  </div>
+			  <div class="item text-center image-grid">	
+					<ul>
+					<li> <img src="images/6.jpg" alt=""></li>			    
+					 <li><img src="images/2.jpg" alt=""></li>				 
+					 <li><img src="images/8.jpg" alt=""></li>
+					 </ul>
+			  </div>
+		  </div> 		
+	 </div>
+</div>
+<!---->
+<!---->
+<div class="rooms text-center">
+	 <div class="container">
+		 <h3>Our Accomodations</h3>
+		 <div class="room-grids">
+			 <div class="col-md-4 room-sec">
+				 <img src="images/pic1.jpg" alt=""/>
+				 <h4>Apartment</h4>
+				 <p>The low-rise, air conditioned apartment-style complexes are located at the southern end of the campus between the Avila Centre and Bartley Residence.</p>
+				 <div class="items">
+					 <li><a href="#"><span class="img1"> </span></a></li>
+					 <li><a href="#"><span class="img2"> </span></a></li>
+					 <li><a href="#"><span class="img3"> </span></a></li>
+					 <li><a href="#"><span class="img4"> </span></a></li>
+					 <li><a href="#"><span class="img5"> </span></a></li>
+					 <li><a href="#"><span class="img6"> </span></a></li>
+				 </div>
+			 </div>
+			 <div class="col-md-4 room-sec">
+				 <img src="images/pic2.jpg" alt=""/>
+				 <h4>Dormatory</h4>
+				 <p>Bartley Residence is nestled along the McIntyre River and is divided into a series of 'houses'. The rooms in each of these houses are ideal for school and sports groups.</p>
+				 <div class="items">					
+					 <li><a href="#"><span class="img1"> </span></a></li>
+					 <li><a href="#"><span class="img2"> </span></a></li>
+					 <li><a href="#"><span class="img3"> </span></a></li>
+					 <li><a href="#"><span class="img4"> </span></a></li>
+					 <li><a href="#"><span class="img5"> </span></a></li>
+					 <li><a href="#"><span class="img6"> </span></a></li>
+				 </div>
+			 </div>
+			 <div class="col-md-4 room-sec">
+				 <img src="images/pic3.jpg" alt=""/>
+				 <h4>Townhouse</h4>
+				 <p>Our townhouses offer a "home away from home" atmosphere, ideal for larger groups or families.</p></br>
+				 <div class="items">
+					 <li><a href="#"><span class="img1"> </span></a></li>
+					 <li><a href="#"><span class="img2"> </span></a></li>
+					 <li><a href="#"><span class="img3"> </span></a></li>
+					 <li><a href="#"><span class="img4"> </span></a></li>
+					 <li><a href="#"><span class="img5"> </span></a></li>
+					 <li><a href="#"><span class="img6"> </span></a></li>
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+</div>
+<!---->
+<div class="fotter">
+	 <div class="container">
+		 <h3>EXCEPTIONAL. <label>UNCONVENTIONAL.</label></h3>
+		 <h4>Your conference & accommodation specialists!</h4>
+		 <i class="wolfie"></i>
+	 </div>
+</div>
+<!---->
+<div class="fotter-info">
+	  <div class="container">
+	      <div class="col-md-5 details">
+			 <div class="hotel-info">
+				 <h4>THUNDER BAY CAMPUS</h4>
+					<p>955 Oliver Rd</br>
+					Thunder Bay, ON P7B 5E1</br>
+					(807) 343-8110</br>
+					tbay@lakeheadu.ca</br>
+			 </div>
+			 <div class="news">
+				 <h4>ORILLIA CAMPUS</h4>
+					<p>500 University Avenue</br>
+					Orillia, ON L3V 0B9</br>
+					(705) 330-4008</br>
+					orillia@lakeheadu.ca</br>	
+			 </div>
+				<div class="clearfix"></div>
+		 </div>
+		 <div class="col-md-7 details">
+			 <div class="join">
+				 <h4>ABOUT US</h4>
+				 <p>Our scenic campus is centrally located within the city and maintains the integrity of its naturally wooded surroundings. The campus is situated around man-made Lake Tamblyn and provides the opportunity for many recreational activities throughout the year. Running through the university campus is the McIntyre River which creates a beautiful backdrop for our residence complexes. </p>
+				 <a href="#">READ MORE</a>
+			 </div>
+			 <div class="member">
+			 <h4>ADMIN AREA</h4>
+			 <form>
+			 <p>Username</p>
+			 <input type="text" placeholder="" required/>
+			 <p>Password</p>
+			 <input type="password" placeholder="" required/>		
+			 <input type="submit" value="LOGIN"/>
+			 </form>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+		 <div class="clearfix"></div>
+	  </div> 
+</div>
+<!---->
+
+</body>
+</html>
